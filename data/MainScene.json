@@ -1,0 +1,55 @@
+{
+  "Player": {
+    "name" : "Player",
+    "position": [400, 300],
+    "rotation": 0,
+    "scale": [0.5, 0.5],
+
+    "components": [
+      {
+        "typeId": "PLAYER_CONTROLLER",
+        "serializedData": {
+          "name": "playerController",
+          "localPosition": [0, 0]
+        }
+      },
+      {
+        "typeId": "SPRITE_COMPONENT",
+        "serializedData": {
+          "name": "playerSprite",
+          "localPosition": [0, 0],
+          "sprite": "playerShip2_green.png",
+          "visible": true
+        }
+      },
+      {
+        "typeId": "SPRITE_COMPONENT",
+        "serializedData": {
+          "name": "thrusterSprite",
+          "localPosition": [0, -25],
+          "sprite": "fire16.png",
+          "visible": false
+        }
+      },
+      {
+        "typeId": "PHYSICS_COMPONENT",
+        "serializedData": {
+          "name": "physicsComponent",
+          "localPosition": [0, 0],
+          "rotationDrag": 10,
+          "velocityDrag": 2,
+          "mass": 1
+        }
+      }
+    ]
+  },
+
+  "AsteroidSpawner": {
+    "name" : "AsteroidSpawner",
+    "position": [400, 300],
+    "rotation": 0,
+    "scale": [0.5, 0.5],
+
+    "components": []
+  }
+}
